@@ -1,0 +1,28 @@
+{
+  "name": "sleeper-jr-bot",
+  "description": "Sleeper Jr Bot — Coursera BoredClass Sleeper extension (WXT + Vue).",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt -b edge",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "vue-tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.29"
+  },
+  "devDependencies": {
+    "@wxt-dev/module-vue": "^1.0.3",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.2.5",
+    "wxt": "^0.20.26"
+  }
+}
